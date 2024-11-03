@@ -10,7 +10,7 @@ function App() {
         <Sidebar />
       </div>
       
-      <div className="body-container pt-[70px] bg-[#F0F5FF]">
+      <div className="body-container relative pt-[70px] bg-[#F0F5FF]">
       <Navbar />
       <p className="text-blue-500">Helloworld</p>
       </div>     

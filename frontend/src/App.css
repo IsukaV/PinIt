@@ -7,6 +7,18 @@
 }
 
 .side-btn{
-    @apply flex w-[70%] pl-[8px] h-[50px] flex-row items-center rounded-[15px] cursor-pointer;
+    @apply flex w-[70%] font-light pl-[8px] h-[50px] flex-row items-center rounded-[15px] cursor-pointer;
     @apply hover:bg-[#F0F5FF];
+}
+
+#search-task:focus{
+    outline:none;
+    border: none;
+    @apply w-24 transition-all duration-300 focus:w-[300px];
+}
+
+
+.profile-pic{
+    @apply h-[45px] w-[45px] bg-[#ffffff] rounded-[100%];
+    overflow: hidden;
 }
