@@ -1,0 +1,12 @@
+.page-container{
+    display: grid;
+    grid-template-columns: minmax(250px,14%)  86%;
+}
+
+.side-container{
+}
+
+.side-btn{
+    @apply flex w-[70%] pl-[8px] h-[50px] flex-row items-center rounded-[15px] cursor-pointer;
+    @apply hover:bg-[#F0F5FF];
+}

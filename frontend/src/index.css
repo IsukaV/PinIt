@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', 'sans-serif';
+}
+
+/* Optional: Reset some default margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+}
