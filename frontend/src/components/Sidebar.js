@@ -1,6 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function Sidebar() {
+    const navigate = useNavigate();
+
+
   return (
     <div className="h-screen pt-[20px]">
         <p className="text-center text-4xl text-[#377BFB]">PinIt</p>
@@ -17,22 +21,22 @@ function Sidebar() {
 
         <div className="flex flex-col gap-1 items-center justify-center mt-[15px]">
             
-            <div className="side-btn">
+            <div className="side-btn" onClick={() => {navigate('/today')}}>
                 <img src="/assets/images/Today.png" className="h-[25px] inline mr-[18px]"/>
                 <p className="text-[18px] font-700 "> Today</p>
             </div>
 
-            <div className="side-btn">
+            <div className="side-btn" onClick={() => {navigate('/upcoming')}}>
                 <img src="/assets/images/Upcoming.png" className="h-[21px] inline mr-[18px]"/>
                 <p className="text-[18px] font-700 "> Upcoming</p>
             </div>
 
-            <div className="side-btn">
+            <div className="side-btn" onClick={() => {navigate('/completed')}}>
                 <img src="/assets/images/Completed.png" className="h-[19px] inline mr-[18px]"/>
                 <p className="text-[18px] font-700 "> Completed</p>
             </div>
 
-            <div className="side-btn">
+            <div className="side-btn" onClick={() => {navigate('/important')}}>
                 <img src="/assets/images/Starred.png" className="h-[21px] inline mr-[18px]"/>
                 <p className="text-[18px] font-700 "> Important</p>
             </div>

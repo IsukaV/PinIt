@@ -22,9 +22,9 @@ function Navbar() {
 
 
         {/*Profile and Notifications*/}
-        <div className="flex items-center w-[160px] justify-between">
-            <div>
-                <img src="assets/images/WhiteNotify.png" className="h-[30px]" />
+        <div className="flex items-center w-[180px] justify-around">
+            <div className="w-[300px] borde">
+                <img src="assets/images/WhiteNotify.png" className="h-[30px] hover:h-[33px] m-auto cursor-pointer" />
             </div>
             <div className='flex items-center gap-1.5'>
                 <div className="profile-pic ">
